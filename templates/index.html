@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block script %}
+    <script src="../static/index.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+{% endblock %}
+
+{% block body %}
+    <div id="index-view">
+        <div id="indexmain" class="container-fluid py-5 text-center">
+            <div class="title">Welcome to our <span class="title-name">Stock Predictor!</span></div>
+            <div id="indexbody">
+                <p>This is a website that will show stock predictions for the next thirty days for 10 chosen stocks.</p> 
+                <p>There is a page for each model's prediction; both are similar with minor differences in the model itself and variables used, but serve the same purpose.</p> 
+                <p>If you click on each stock graph, you can look at the previous 30 days of predictions to see how accurate the previous forecasts are.</p>
+            </div>
+        </div>
+        <div id="indexbottom">
+            <ul style="list-style-position: inside;">
+                <li>Utilizes Tensorflow and Keras libraries to construct models</li>
+                <li>Uses LSTM Models on both stock returns and stock prices to forecast results</li>
+                <li>Recursively calls functions on previous predictions for future predictions</li>
+            </ul>
+        </div>
+    </div>
+    <div id="model-1-view">
+        <div id="m1-header">
+            <h2>Listed below are the 10 biggest S&P 500 Stocks forecasts for the next 30 days, according to the first model:</h2>
+            <h4 style="margin-top: 40px;">Click on any of the headers to see that stock's prediction graph</h4>
+        </div>
+    </div>
+    <div id="model-2-view"></div>
+{% endblock %}

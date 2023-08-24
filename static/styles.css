@@ -1,0 +1,81 @@
+html {
+    background-color: #85bb65;
+    color: #3e3e3c;
+}
+
+body {
+    background-color: #85bb65;
+    font-family: "Lucida Console", monospace;
+    text-align: center;
+}
+
+nav {
+    background-color: goldenrod;
+}
+
+.navbar-nav li {
+    margin: 10px 20px;
+    padding: 10px;
+    color: #3e3e3c;
+    background-color: #85bb65;
+    border: 4px double black;
+}
+
+.navbar-nav li:hover {
+    cursor: pointer;
+}
+
+#indexbody {
+    height: 100%;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#indexbottom {
+    margin-top: 40px;
+    background-color: #85bb65;
+    width: 100%;
+}
+
+#indexmain, #m1-header {
+    background-color: #228D57;
+}
+
+.title {
+    padding: 40px;
+    color: white;
+    font-size: 3vw;
+    background-color: rgb(56, 14, 14);
+    border: 10px ridge silver;
+    font-family: 'Courier New', monospace;
+}
+
+.title-name {
+    color: #e8e9c9; 
+    background-color: #228D57; 
+    padding: 20px; 
+    border: 4px ridge black; 
+    white-space: nowrap;
+}
+
+#model-1-view {
+    background-color: black;
+}
+
+#m1-header {
+    padding: 40px;
+}
+
+.stock-title {
+    padding: 40px;
+    color: white;
+    font-size: 3vw;
+    background-color: rgb(56, 14, 14);
+    border: 10px ridge silver;
+    font-family: 'Courier New', monospace;
+    margin-bottom: 0;
+}
+
+.stock-title:hover {
+    cursor: pointer;
+}
